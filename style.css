@@ -21,7 +21,7 @@ header{
     height: 4.2vw;
     width: 8.7vw;
 }
-nav ul{
+.nav-pc ul{
     list-style: none;
     display: flex;
     color: #9767A9;
@@ -30,9 +30,12 @@ nav ul{
     justify-content: space-between;
     font-size: 1.35vw;
 }
-nav li:hover{
+.nav-pc li:hover{
     font-weight: 800;
     cursor: pointer;
+}
+.nav-mobile{
+    display:none;
 }
 .busca input{
     height: 3.1vw;
@@ -408,6 +411,15 @@ footer img{
     justify-content: center;
     
 }
+.referencias-media{
+    display:none;
+}
+.redes-sociais-footer{
+    display: none;
+}
+.voltar-media{
+    display: none;
+}
 .voltar{
     display: flex;
     justify-content: space-around;
@@ -427,4 +439,383 @@ footer img{
 }
 .voltar a:hover{
     background-color: #AC95BB;
+}
+@media (max-width: 426px) {
+    header{
+        height: 8vw;
+        justify-content: safe;
+    }
+    .logo{
+        padding-top:1.5vw;
+        padding-left:40vw;
+    }
+    .logo img{
+        height: 90%;
+        width: 20%;
+    }
+    .busca{
+        display: none;
+    }
+    .redes-sociais{
+        display: none;
+    }
+    .nav-pc{
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+    }
+    .nav-mobile ul{
+        list-style: none;
+        position: absolute;
+        width: 100%;
+    }
+    .nav-mobile input{
+        display: none;
+    }
+    .nav-mobile nav{
+        background-color: #9767A9;
+        width: 35vw;
+        height: 42vw;
+        z-index: -1;
+        top: 8.01vw;
+        left: -40vw;
+        position: absolute;
+        transition: all .5s;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        transform: translateX(40vw);
+    }
+    .nav-mobile li{
+        display: block;
+        height: 7vw;
+        padding: 1vw;
+        color: #fff;
+    }
+    .nav-mobile li:hover{
+        background-color: #AC95BB;
+        font-weight: 900;
+    }
+    .nav-mobile label{
+        position: absolute;
+        margin-top: -4.02vw;
+    }
+    
+    .nav-mobile img{
+        width: 10vw;
+    }
+    .cabeludo{
+        background-image: url("./imgs/cabeludo.png");
+        padding-top:5vw;
+        padding-left:6vw;
+    }
+    .titulo{
+        flex-direction: column;
+    }
+    .titulo h1{
+        position: relative;
+        left: 0vw;
+        top: 0vw;
+        width:50%;
+        font-size: 10vw;
+    }
+    .titulo div{
+        position: relative;
+        left: 0vw;
+        top: 0vw;
+    }
+    .intro{
+        position: relative;
+        flex-direction: column;
+        height: 49vw;
+        justify-content: center;
+        align-items: start;
+        padding-top: 2vw;
+        padding-left: 3vw;
+    }
+    .intro-titulo{
+        width: 100%;
+        height: 15vw;
+        font-size: 2vw;
+    }
+    .intro-titulo h2{
+        font-size: 4.5vw;
+    }
+    .intro-p{
+        width: 100%;
+        height: 21vw
+    }
+    .intro-p p{
+        font-size: 2.5vw;
+        margin-top: 1vw;
+    }
+    .asdicas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .geral{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 98.7vw;
+        margin-top: 2vw;
+    }
+    .geral h3{
+        font-size: 4vw;
+    }
+    .geral p{
+        font-size: 2.5vw;
+        margin-top: 1vw;
+    }
+    .dica-um img{
+        width: 85vw;
+        height:75vw;
+        position: static;
+        left: 0vw;
+        top: 0vw;
+        
+    }
+    .dica-um div{
+        background-color: #9767A9;
+        height: 46vw;
+        width: 98vw;
+        position: static;
+        left: 0vw;
+        top: 0vw;
+        padding: 2vw;
+        margin-top: -24vw;
+    }
+    .dica-dois img{
+        width: 85vw;
+        height: 73vw;
+        position: static;
+        right: 0vw;
+        top: 0vw;
+    }
+    .dica-dois div{
+        background-color: #9767A9;
+        height: 43vw;
+        width: 98vw;
+        position: static;
+        padding: 2vw;
+        right: 0vw;
+        top: 0vw;
+        margin-top: -10vw;
+    }
+    .dica-tres img{
+        width: 85vw;
+        height: 75vw;
+        position: static;
+        left: 0vw;
+        top: 0vw;   
+    }
+    .dica-tres div{
+        background-color: #9767A9;
+        height: 38vw;
+        width: 98vw;
+        position: static;
+        padding: 2vw;
+        left: 0vw;
+        top: 0vw;
+        margin-top:-15vw;
+    }
+    .dica-quatro img{
+        width: 85vw;
+        height: 75vw;
+        position: static;
+        right: 0vw;
+        top: 0vw;
+    }
+    .dica-quatro div{
+        background-color: #9767A9;
+        height: 39vw;
+        width: 98vw;
+        position: static;
+        padding: 2vw;
+        right: 0vw;
+        top: 0vw;
+        margin-top:-8vw;
+    }
+    .dica-cinco img{
+        width: 85vw;
+        height: 75vw;
+        position: static;
+        left: 0vw;
+        top: 0vw;
+    }
+    .dica-cinco div{
+        background-color: #9767A9;
+        height: 44vw;
+        width: 98vw;
+        position: static;
+        padding: 2vw;
+        left: 0vw;
+        top: 0vw;
+        margin-top:-15vw;
+    }
+    .dica-seis img{
+        width: 85vw;
+        height: 75vw;
+        position: static;
+        right: 0vw;
+        top: 0vw;
+    }
+    .dica-seis div{
+        background-color: #9767A9;
+        height: 33vw;
+        width: 98vw;
+        position: static;
+        padding: 2vw;
+        right: 0vw;
+        top: 0vw;
+        margin-top:-10vw;
+    }
+    .dica-sete img{
+        width: 85vw;
+        height: 75vw;
+        position: static;
+        left: 0vw;
+        top: 0vw;
+    }
+    .dica-sete div{
+        background-color: #9767A9;
+        height: 27vw;
+        width: 98vw;
+        position: static;
+        padding: 2vw;
+        left: 0vw;
+        top: 0vw;
+        margin-top:-13vw;
+    }
+    .cabelo img{
+        height: 10vw;
+        width: 50vw;
+        position: static;
+        right: 0vw;
+        top: 0vw;
+        margin-top: 7vw;
+    }
+    .grid{
+        position: static;
+        top: 0vw;
+        margin-top: 10vw;
+        width: auto;
+        height: auto;
+        padding: 3vw;
+    }
+    .grid img{
+        padding-top:1vw;
+    }
+    .img-grid1{
+        width: 48vw;
+        height: 65vw;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .img-grid2{
+        width: 95vw;
+        height: 55vw;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start:4;
+        grid-row-end: 6;
+    }
+    .img-grid3{
+        width: 22vw;
+        height: 25vw;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .img-grid4{
+        width: 22vw;
+        height: 25vw;
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .img-grid5{
+        width: 45vw;
+        height: 35vw;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .img-grid6{
+        width: 45vw;
+        height: 70vw;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    .img-grid7{
+        width: 24vw;
+        height: 21vw;
+        grid-column: 2;
+        grid-row: 8;
+    }
+    .img-grid8{
+        width: 23vw;
+        height: 46vw;
+        grid-column: 1;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    .img-grid9{
+        width: 24vw;
+        height: 21vw;
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .img-grid10{
+        width: 24vw;
+        height: 46vw;
+        grid-column: 2;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    footer{
+        background-color: #fff;
+        height: 35vw;
+        width: 90vw;
+        position: relative;
+        top: 0vw;
+        color: #000;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        margin-left: 5vw;
+    }
+    footer section{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+    }
+    .referencias{
+        display: none;
+    }
+    .referencias-media{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        font-size: 2.3vw;
+    }
+    .voltar{
+        display: none;
+    }
+    .voltar-media{
+        display: flex;
+        width:40vw;
+        justify-content:center;
+    }
+    .voltar-media img{
+        width: 22vw;
+        height: 6vw;
+    }
 }
